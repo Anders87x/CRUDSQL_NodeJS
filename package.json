@@ -1,0 +1,22 @@
+{
+  "name": "PERSONAL_ApiSQLSP",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "nodemon api.js"
+  },
+  "dependencies": {
+    "body-parser": "^1.19.0",
+    "cors": "2.8.1",
+    "express": "^4.17.1",
+    "mssql": "^6.2.1"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.4"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
+}
