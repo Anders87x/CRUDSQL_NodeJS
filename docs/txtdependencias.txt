@@ -30,3 +30,9 @@
     Nodemon es una utilidad que monitorea los cambios en el código fuente que se esta 
     desarrollando y automáticamente re inicia el servidor.
 },
+
+
+
+node -v
+
+npm init -y

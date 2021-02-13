@@ -1,6 +1,6 @@
 const config = {
     user :'sa',
-    password :'*vo.2015',
+    password :'*****',
     server:'192.168.18.203',
     database:'BDTEST',
     options:{
