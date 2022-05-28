@@ -3,6 +3,7 @@ const sql = require('mssql');//Se necesita paquete mssql
 
 //Funcion Async : Asyncrona esta devuelve un objeto
 
+/* TODO: Obtener Listado */
 async function getCategoria() {
     try {
         let pool = await sql.connect(config);
@@ -14,12 +15,13 @@ async function getCategoria() {
     }
 }
 
+/* TODO: Obtener Listado por ID */
 async function getCategoria_x_id(cat_id) {
     try {
         let pool = await sql.connect(config);
         let product = await pool.request()
             .input('input_parameter', sql.Int, cat_id)
-            .query("SELECT * from TM_CATEGORIA where CAT_ID = @input_parameter");
+            .query("SELECT * from TM_CATEGORIA where cat_id = @input_parameter");
         return product.recordsets;
 
     }
@@ -28,6 +30,7 @@ async function getCategoria_x_id(cat_id) {
     }
 }
 
+/* TODO: Inserta Registro */
 async function insertCategoria(categoria) {
     try {
         let pool = await sql.connect(config);
@@ -43,6 +46,7 @@ async function insertCategoria(categoria) {
     }
 }
 
+/* TODO: Actualiza Registro */
 async function updateCategoria(categoria) {
     try {
         let pool = await sql.connect(config);
